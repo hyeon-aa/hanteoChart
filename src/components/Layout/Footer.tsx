@@ -1,3 +1,7 @@
 export const Footer = () => {
-  return <>푸터</>;
+  return (
+    <>
+      <div className="fixed bottom-0">푸터</div>
+    </>
+  );
 };

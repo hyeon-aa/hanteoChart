@@ -1,13 +1,16 @@
 type ChipProps = {
   label: string;
+  className?: string;
 };
 
-export const Chip = ({ label }: ChipProps) => {
+export const Chip = ({ label, className }: ChipProps) => {
   return (
     <>
-      <div className="bg-pink-500 text-white px-2 py-1 rounded-full">
+      <span
+        className={`bg-pink-500 font-bold text-white px-2 py-0.5 rounded-lg ${className}`}
+      >
         {label}
-      </div>
+      </span>
     </>
   );
 };

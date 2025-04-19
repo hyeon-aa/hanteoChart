@@ -3,6 +3,7 @@ import App from "../App";
 import { ErrorPage } from "../pages/ErrorPage";
 import { Chart } from "../pages/Chart/Chart";
 import { Whook } from "../pages/Whook/Whook";
+import { Vote } from "../pages/Vote/Vote";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: "/whook",
         element: <Whook />,
+      },
+      {
+        path: "/vote",
+        element: <Vote />,
       },
     ],
   },

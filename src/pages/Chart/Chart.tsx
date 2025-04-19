@@ -1,3 +1,4 @@
+import { BannerSlider } from "./_components/BannerSlider";
 import { ContentBox } from "./_components/ContentBox";
 
 export const Chart = () => {
@@ -20,7 +21,7 @@ export const Chart = () => {
 
   return (
     <>
-      <div>차트</div>
+      <BannerSlider></BannerSlider>
       {contentList.map((content) => {
         return (
           <ContentBox img={content.img} content={content.content}></ContentBox>
