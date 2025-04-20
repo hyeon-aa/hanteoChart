@@ -28,7 +28,6 @@ export const Chart = () => {
   const [contentList, setContentList] = useState(
     initialContentList.slice(0, 6)
   );
-  const [page, setPage] = useState(1);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -72,7 +71,6 @@ export const Chart = () => {
 
     setContentList((prev) => [...prev, ...newContent]);
     pageRef.current = nextPage;
-    setPage(nextPage);
   };
 
   return (
