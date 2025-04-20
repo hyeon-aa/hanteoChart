@@ -59,7 +59,7 @@ export const BannerSlider = () => {
               <div className="relative bg-white rounded-lg">
                 <img
                   onClick={() => handleMovetoLink(banner.link)}
-                  className="w-full max-h-[200px] rounded-lg"
+                  className="cursor-pointer w-full max-h-[200px] rounded-lg"
                   src={banner.imgUrl}
                 ></img>
               </div>
