@@ -12,18 +12,21 @@ export const BannerSlider = () => {
       period: "2020.02.08 10:00 ~ 2020.04.08 17:00 (KST)",
       imgUrl: "/bannerImg1.png",
       label: "진행중",
+      link: "https://naver.com",
     },
     {
       title: "2번째 title",
       period: "2025.02.08 10:00 ~ 2025.04.08 17:00 (KST)",
       imgUrl: "/bannerImg2.png",
       label: "진행완료",
+      link: "https://naver.com",
     },
     {
       title: "3번째 title",
       period: "2025.06.08 10:00 ~ 2025.06.08 17:00 (KST)",
       imgUrl: "/bannerImg3.png",
       label: "예정",
+      link: "https://naver.com",
     },
   ];
 
@@ -43,6 +46,10 @@ export const BannerSlider = () => {
     navigate("/vote");
   };
 
+  const handleMovetoLink = (link: string) => {
+    window.open(link, "_blank");
+  };
+
   return (
     <>
       <div className="w-full pb-6 px-2">
@@ -51,6 +58,7 @@ export const BannerSlider = () => {
             <div key={index} className="relative px-2">
               <div className="relative bg-white rounded-lg">
                 <img
+                  onClick={() => handleMovetoLink(banner.link)}
                   className="w-full max-h-[200px] rounded-lg"
                   src={banner.imgUrl}
                 ></img>
